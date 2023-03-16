@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\LinkedList">
+      <UniqueIdentifier>{4cb54daf-0776-4225-818c-554915067a78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\BST">
+      <UniqueIdentifier>{0607c911-2cee-4e90-9fa8-db0f2a5369c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\LinkedList">
+      <UniqueIdentifier>{a862a8da-979a-47c0-843c-aac2d8fce071}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\BST">
+      <UniqueIdentifier>{05823714-09da-4c4f-bd4f-10cc31724717}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Graph">
+      <UniqueIdentifier>{8773a63c-415f-4aa5-af5f-f9015c5a0f4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graph">
+      <UniqueIdentifier>{bbebb719-567f-4038-bca6-26b43d4bcd69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Recurssion">
+      <UniqueIdentifier>{10c0ed76-ff17-44a7-9409-6b647c23320d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Recurssion">
+      <UniqueIdentifier>{f71c4ad7-83f8-41ff-b3b1-fa37bcd2a253}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SmartPointer">
+      <UniqueIdentifier>{efac5ac1-aeb9-43c8-b54f-becb9b9499f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SmartPointer">
+      <UniqueIdentifier>{7573fb9b-0b1d-4581-8e4c-a4e265ae0602}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\MoveSemantics">
+      <UniqueIdentifier>{403158ca-6536-4b05-b35e-f9518008c248}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\MoveSemantics">
+      <UniqueIdentifier>{a286b1f9-cf4f-475f-8208-892cc4ea3e11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Heap">
+      <UniqueIdentifier>{93f927b0-3cc8-468c-92c6-299569855f33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Heap">
+      <UniqueIdentifier>{2b9eef76-9293-46ae-a929-aebf1860106a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Stack">
+      <UniqueIdentifier>{4f4f37f7-66e4-43ce-a48b-456704d236bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\BinSearch">
+      <UniqueIdentifier>{4069c3e2-66f1-417f-8e8e-db419a17233f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\BinSearch">
+      <UniqueIdentifier>{beea1a9b-2ac1-4482-88a4-507e0e989e12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Stack">
+      <UniqueIdentifier>{3960c47a-5242-4362-8d6c-cadaec934441}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SlidingWindow">
+      <UniqueIdentifier>{62482d8b-c220-43b6-b116-5aebf9d0f78a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SlidingWindow">
+      <UniqueIdentifier>{71ede0fc-ffcd-4182-8750-1d1dc0c0c14b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CmdApp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LinkedList.cpp">
+      <Filter>Source Files\LinkedList</Filter>
+    </ClCompile>
+    <ClCompile Include="BST.cpp">
+      <Filter>Source Files\BST</Filter>
+    </ClCompile>
+    <ClCompile Include="BSTCpp14.cpp">
+      <Filter>Source Files\BST</Filter>
+    </ClCompile>
+    <ClCompile Include="Graph.cpp">
+      <Filter>Source Files\Graph</Filter>
+    </ClCompile>
+    <ClCompile Include="RecurssionProblems.cpp">
+      <Filter>Source Files\Recurssion</Filter>
+    </ClCompile>
+    <ClCompile Include="Unique_Ptr.h">
+      <Filter>Source Files\SmartPointer</Filter>
+    </ClCompile>
+    <ClCompile Include="MoveSemantics.cpp">
+      <Filter>Source Files\MoveSemantics</Filter>
+    </ClCompile>
+    <ClCompile Include="SharedPtr.cpp">
+      <Filter>Source Files\SmartPointer</Filter>
+    </ClCompile>
+    <ClCompile Include="Heap.cpp">
+      <Filter>Source Files\Heap</Filter>
+    </ClCompile>
+    <ClCompile Include="HeapQuick.cpp">
+      <Filter>Source Files\Heap</Filter>
+    </ClCompile>
+    <ClCompile Include="StackProblem.cpp">
+      <Filter>Source Files\Stack</Filter>
+    </ClCompile>
+    <ClCompile Include="BinSearch.cpp">
+      <Filter>Source Files\BinSearch</Filter>
+    </ClCompile>
+    <ClCompile Include="SlidingWindow.cpp">
+      <Filter>Source Files\SlidingWindow</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="LinkedList.h">
+      <Filter>Header Files\LinkedList</Filter>
+    </ClInclude>
+    <ClInclude Include="BST.h">
+      <Filter>Header Files\BST</Filter>
+    </ClInclude>
+    <ClInclude Include="BSTCpp14.h">
+      <Filter>Header Files\BST</Filter>
+    </ClInclude>
+    <ClInclude Include="Graph.h">
+      <Filter>Header Files\Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="Recurssion.h">
+      <Filter>Header Files\Recurssion</Filter>
+    </ClInclude>
+    <ClInclude Include="MoveSemantics.h">
+      <Filter>Header Files\MoveSemantics</Filter>
+    </ClInclude>
+    <ClInclude Include="SharedPtr.h">
+      <Filter>Header Files\SmartPointer</Filter>
+    </ClInclude>
+    <ClInclude Include="HeapProblems.h">
+      <Filter>Header Files\Heap</Filter>
+    </ClInclude>
+    <ClInclude Include="StackProblems.h">
+      <Filter>Header Files\Stack</Filter>
+    </ClInclude>
+    <ClInclude Include="BinSearch.h">
+      <Filter>Header Files\BinSearch</Filter>
+    </ClInclude>
+    <ClInclude Include="SlidingWindow.h">
+      <Filter>Header Files\SlidingWindow</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
