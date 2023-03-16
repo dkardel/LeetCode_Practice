@@ -152,7 +152,7 @@ std::vector<int>& MaxOfSubArray(std::vector<int> array, int k)
 	return maxArray;
 }
 
-int SumOfLargeSubArray(std::vector<int> array, int k)
+int SumOfLargestSubArray(std::vector<int> array, int k)
 {
 	int mxsize = 0;
 	int sum = 0;

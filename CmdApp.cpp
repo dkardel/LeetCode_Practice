@@ -355,7 +355,7 @@ int main()
      std::vector<int> newvect = FirstNegativeNumberInWindow(vector, 3);
      vector = { 4, 1, 1, 2, 2, 1, 3, 1, 2, 3, 1, 1, 1, 1, 1, 1 };
      newvect = MaxOfSubArray(vector, 3);
-     SumOfLargeSubArray(vector, 6);
+     SumOfLargestSubArray(vector, 6);
     return 0;
 }
 
