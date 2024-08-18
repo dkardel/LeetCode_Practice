@@ -24,7 +24,7 @@
     <ProjectGuid>{14489abd-f465-4f5f-80d5-96b478155268}</ProjectGuid>
     <RootNamespace>CmdApp</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>DataStructure</ProjectName>
+    <ProjectName>WHQL</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -77,6 +77,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -91,6 +92,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -105,6 +107,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -119,6 +122,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -129,9 +133,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="BinSearch.cpp" />
+    <ClCompile Include="BitOps.cpp" />
     <ClCompile Include="BST.cpp" />
     <ClCompile Include="BSTCpp14.cpp" />
-    <ClCompile Include="CmdApp.cpp" />
     <ClCompile Include="Graph.cpp" />
     <ClCompile Include="Heap.cpp" />
     <ClCompile Include="HeapQuick.cpp" />
@@ -140,11 +144,14 @@
     <ClCompile Include="RecurssionProblems.cpp" />
     <ClCompile Include="SharedPtr.cpp" />
     <ClCompile Include="SlidingWindow.cpp" />
+    <ClCompile Include="SList.cpp" />
+    <ClCompile Include="Sort.cpp" />
     <ClCompile Include="StackProblem.cpp" />
     <ClCompile Include="Unique_Ptr.h" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BinSearch.h" />
+    <ClInclude Include="BitOps.h" />
     <ClInclude Include="BST.h" />
     <ClInclude Include="BSTCpp14.h" />
     <ClInclude Include="Graph.h" />
@@ -154,9 +161,22 @@
     <ClInclude Include="Recurssion.h" />
     <ClInclude Include="SharedPtr.h" />
     <ClInclude Include="SlidingWindow.h" />
+    <ClInclude Include="SLinkedList.h" />
+    <ClInclude Include="SList.h" />
+    <ClInclude Include="Sort.h" />
     <ClInclude Include="StackProblems.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
+    <Import Project="packages\gtest.1.7.0\build\native\gtest.targets" Condition="Exists('packages\gtest.1.7.0\build\native\gtest.targets')" />
   </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\gtest.1.7.0\build\native\gtest.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\gtest.1.7.0\build\native\gtest.targets'))" />
+  </Target>
 </Project>

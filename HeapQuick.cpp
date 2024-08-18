@@ -4,7 +4,7 @@
 #include <vector>
 #endif // !_HEAP_QUICK_
 
-void swap(int* a, int* b)
+static void swap(int* a, int* b)
 {
 	int temp = *a;
 	*a = *b;

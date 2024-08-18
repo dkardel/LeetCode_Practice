@@ -73,6 +73,19 @@ void dsa::BST::Inorder(BST* root)
 	Inorder(root->right);
 }
 
+void dsa::BST::ReInorder(BST* root)
+{
+	if (!root)
+	{
+		return;
+	}
+
+	ReInorder(root->right);
+	std::cout << root->data << " ";
+	ReInorder(root->left);
+}
+
+
 void dsa::BST::InorderItr(BST* root)
 {
 	BST* p_run = root;
@@ -211,4 +224,15 @@ void dsa::BST::Postorder(BST* root)
 	Postorder(root->left);
 	Postorder(root->right);
 	std::cout << root->data << " ";
+}
+
+
+int main()
+{
+	dsa::BST bst(50);
+	bst.Insert(&bst, 30);
+	bst.Insert(&bst, 10);
+	bst.Insert(&bst, 20);
+	bst.ReInorder(&bst);
+	bst.DeleteNode(&bst, 10);
 }

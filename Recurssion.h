@@ -5,7 +5,7 @@
 #include<unordered_map>
 #include"BSTCpp14.h"
 void printNumberWithRecurssion(int bound);
-int fibbonacciSeries(int end);
+void fibbonacciSeries(int end);
 int factorial(int number);
 int heightOfTree(dsa::BST* root);
 void sort(std::vector<int>& vect);

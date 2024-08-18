@@ -13,6 +13,7 @@ namespace dsa
 		BST* Insert(BST*, int);
 		BST* InsertItr(BST*, int);
 		void Inorder(BST*);
+		void ReInorder(BST*);
 		void InorderItr(BST*);
 		void Preorder(BST*);
 		void PreorderItr(BST*);

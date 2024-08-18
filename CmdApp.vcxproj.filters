@@ -73,11 +73,20 @@
     <Filter Include="Header Files\SlidingWindow">
       <UniqueIdentifier>{71ede0fc-ffcd-4182-8750-1d1dc0c0c14b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\BitOperation">
+      <UniqueIdentifier>{3dd664c0-5c2f-4a92-ab74-527230e14548}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\BitOperation">
+      <UniqueIdentifier>{4082880e-1b7f-4148-9f18-10175c716d8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Sort">
+      <UniqueIdentifier>{e06c7f0a-7a6c-4230-8de5-f20eccfaec7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Sort">
+      <UniqueIdentifier>{3385a0cb-4ea8-4f27-b58a-818a5766acd2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CmdApp.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="LinkedList.cpp">
       <Filter>Source Files\LinkedList</Filter>
     </ClCompile>
@@ -117,6 +126,15 @@
     <ClCompile Include="SlidingWindow.cpp">
       <Filter>Source Files\SlidingWindow</Filter>
     </ClCompile>
+    <ClCompile Include="BitOps.cpp">
+      <Filter>Source Files\BitOperation</Filter>
+    </ClCompile>
+    <ClCompile Include="Sort.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="LinkedList.h">
@@ -152,5 +170,20 @@
     <ClInclude Include="SlidingWindow.h">
       <Filter>Header Files\SlidingWindow</Filter>
     </ClInclude>
+    <ClInclude Include="BitOps.h">
+      <Filter>Header Files\BitOperation</Filter>
+    </ClInclude>
+    <ClInclude Include="Sort.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SLinkedList.h">
+      <Filter>Header Files\LinkedList</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
 </Project>

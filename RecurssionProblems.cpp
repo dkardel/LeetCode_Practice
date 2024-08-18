@@ -7,13 +7,17 @@ void printNumberWithRecurssion(int bound)
 	std::cout << bound << " ";
 }
 
-int fibbonacciSeries(int end)
+void fibbonacciSeries(int end)
 {
-	if (end == 1)
-		return 1;
-	if (end == 0)
-		return 0;
-	return fibbonacciSeries(end - 1) + (fibbonacciSeries(end - 2));
+	static int n1 = 0, n2 = 1, n3;
+	if (end > 1)
+	{
+		n3 = n1 + n2;
+		n1 = n2;
+		n2 = n3;
+		printf("%d ", n3);
+		fibbonacciSeries(end - 1);
+	}
 }
 
 int factorial(int number)
